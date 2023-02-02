@@ -1,0 +1,32 @@
+CREATE TABLE eye_lashes(id INTEGER PRIMARY KEY,MATERIAL TEXT,BRAND TEXT,AISLE INTEGER, PRICE INTEGER, LENGTH INTEGER);
+
+INSERT INTO eye_lashes VALUES(1, "Synthetic", "Ardell",2, 2, 16);
+INSERT INTO eye_lashes VALUES(2, "Silk", "Ardell",2, 3, 18);
+INSERT INTO eye_lashes VALUES(3, "Faux Mink", "Ardell",2, 4, 20);
+INSERT INTO eye_lashes VALUES(4, "Mink", "Ardell",2, 5, 22);
+INSERT INTO eye_lashes VALUES(5, "Synthetic", "Eylure",3, 3, 17);
+INSERT INTO eye_lashes VALUES(6, "Silk", "Eylure",3, 4, 19);
+INSERT INTO eye_lashes VALUES(7, "Faux Mink", "Eylure",3, 5, 20);
+INSERT INTO eye_lashes VALUES(8, "Mink", "Eyelure",3, 6, 22);
+INSERT INTO eye_lashes VALUES(9, "Silk", "Lilly",4, 6, 18);
+INSERT INTO eye_lashes VALUES(10, "Faux Mink", "Lilly",4, 7, 20);
+INSERT INTO eye_lashes VALUES(11, "Mink", "Lilly",4, 8, 22);
+INSERT INTO eye_lashes VALUES(12, "Faux Mink", "Huda Beauty",5, 8, 22);
+INSERT INTO eye_lashes VALUES(13, "Mink", "Huda Beauty",5, 10, 25);
+INSERT INTO eye_lashes VALUES(14, "Mink", "Miss Lashes",6, 11, 25);
+INSERT INTO eye_lashes VALUES(15, "Mink", "I-Envy",6, 12, 25);
+
+
+SELECT SUM(PRICE) FROM eye_lashes;
+SELECT * FROM eye_lashes ORDER BY LENGTH;
+SELECT * FROM eye_lashes WHERE PRICE > 6 ORDER BY AISLE;
+
+
+
+
+
+
+
+
+
+
